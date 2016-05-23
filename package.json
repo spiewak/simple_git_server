@@ -1,0 +1,17 @@
+{
+  "name": "git_server",
+  "version": "1.0.0",
+  "description": "Simple server which serves git data.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "nodegit": "^0.13.0",
+    "promise": "^7.1.1"
+  }
+}
