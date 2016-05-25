@@ -5,6 +5,12 @@ var app = express();
 
 app.use(bodyParser.json());
 
+app.use(function(req,res,next) {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Repo-Path");
+    next();
+});
+
 app.get('/', function (req, res) {
    res.send("GIT Manager API :-)");
 });
